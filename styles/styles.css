@@ -1,0 +1,30 @@
+body {
+  counter-reset: image;
+  counter-set: image 1;
+  background-color: blanchedalmond;
+}
+figure {
+  counter-increment: image;
+  margin: 10px;
+}
+figcaption {
+  padding: 5px 0;
+}
+h2::before {
+  margin: 10px;
+  content: counter(image) ":\A";
+}
+.section1,
+.section2,
+.section3 {
+  border-radius: 15px;
+}
+.section1 {
+  background-color: lightcoral;
+}
+.section2 {
+  background-color: lightgreen;
+}
+.section3 {
+  background-color: lightblue;
+}

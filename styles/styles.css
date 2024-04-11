@@ -2,10 +2,20 @@ body {
   counter-reset: image;
   counter-set: image 1;
   background-color: blanchedalmond;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+header {
+    text-align: justify;
+}
+header div {
+    margin:5px 0;
 }
 figure {
   counter-increment: image;
-  margin: 10px;
+  margin: 10px; 
+  padding:5px;
+ 
 }
 figcaption {
   padding: 5px 0;

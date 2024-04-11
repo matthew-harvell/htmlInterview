@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Velocity EHS HTML Interview v2.3</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <style>
+        body {
+            counter-reset: image;
+            counter-set: image 1;
+            background-color: blanchedalmond;
+        }
+      figure {
+        counter-increment: image;
+        margin: 10px;
+      }
+      figcaption{
+        padding:5px 0;
+      }
+      h2::before {
+        margin:10px;
+        content: counter(image) ":\A";
+      }
+      .section1,.section2,.section3 {
+        border-radius:15px;
+      }
+      .section1 {
+        background-color: lightcoral;
+      }
+      .section2 {
+        background-color: lightgreen;
+      }
+      .section3 {
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>
+        These are some sample images from an image gallery. The client wishes to
+        see these laid out in a few different ways to see what looks best to
+        their eyes.
+      </div>
+
+      <div>
+        Below there are three <code>div</code> elements. These are all colored
+        to indicate their boundaries. Within each of these elements we would
+        like a different layout of the five images:
+        <ol>
+          <li>The client would like to have all the images aligned on the top edge instead of on the bottom.</li>
+          <li>The client would like the images separated horizontally into columns with a 5px margin around each and an inset border of 2px.  A shadow on the right and bottom side would be nice, use your judgement on the size and color.</li>
+          <li>The client would like the images to zig-zag from upper left to the right and then back to lower left.  </li>
+        </ol>
+      </div>
+      <div>
+        You may use any native HTML or CSS elements or properties to accomplish this.  Begin at #1 and move through to #3.
+      </div>
+    </header>
+    <main>
+      <div class="section1">
+        <h2></h2>
+        <figure>
+          <figcaption>Sample Images</figcaption>
+          <img src="images/image1.png" />
+          <img src="images/image2.png" />
+          <img src="images/image3.png" />
+          <img src="images/image4.png" />
+          <img src="images/image5.png" />
+        </figure>
+      </div>
+      <div class="section2">
+        <h2></h2>
+        <figure>
+          <figcaption>Sample Images</figcaption>
+          <img src="images/image1.png" />
+          <img src="images/image2.png" />
+          <img src="images/image3.png" />
+          <img src="images/image4.png" />
+          <img src="images/image5.png" />
+        </figure>
+      </div>
+      <div class="section3">
+        <h2></h2>
+        <figure>
+          <figcaption>Sample Images</figcaption>
+          <img src="images/image1.png" />
+          <img src="images/image2.png" />
+          <img src="images/image3.png" />
+          <img src="images/image4.png" />
+          <img src="images/image5.png" />
+        </figure>
+      </div>
+    </main>
+  </body>
+</html>
